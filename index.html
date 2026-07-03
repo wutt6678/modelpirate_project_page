@@ -61,19 +61,19 @@
 
     <section id="method" class="section-card">
       <h2 class="section-title">ModelPirate Attack</h2>
-      <div class="grid-2">
+      <div class="grid-3">
         <div class="figure-card"><img src="assets/img/attack_model1.png" alt="ModelPirate threat model" /><p class="caption">The adversary constructs a clone private part to mimic the victim private model behaviour.</p></div>
         <div class="figure-card"><img src="assets/img/attack_model2_n.png" alt="Clone model training pipeline" /><p class="caption">Clone training freezes the known shared component and trains only the cloned private part.</p></div>
         <div class="figure-card"><img src="assets/img/attack_model5.png" alt="Deep-shallow clone structure" /><p class="caption">When the private structure is unknown, the clone model uses a deep-shallow design to balance capacity and generalization.</p></div>
       </div>
-      <div class="grid-2" style="margin-top: 1.2rem;">
-          <h3>Threat model</h3>
-          <p>The adversary is an honest-but-curious participant in the PMM process. Given different combinations of prior knowledge, it trains a clone private part <em>P<sub>v</sub><sup>*</sup></em> to simulate the victim's private part <em>P<sub>v</sub></em>.</p>
-          <div class="scenario-list">
-            <div class="scenario"><b>I<sub>s</sub></b>: victim shared parameters are known.</div>
-            <div class="scenario"><b>I<sub>p</sub></b>: victim private structure is known.</div>
-            <div class="scenario"><b>I<sub>d</sub></b>: victim-data subset is known.</div>
-            <div class="scenario"><b>AS[000]--AS[111]</b>: eight prior-knowledge settings.</div>
+      <div>
+        <h3>Threat model</h3>
+        <p>The adversary is an honest-but-curious participant in the PMM process. Given different combinations of prior knowledge, it trains a clone private part <em>P<sub>v</sub><sup>*</sup></em> to simulate the victim's private part <em>P<sub>v</sub></em>.</p>
+        <div class="scenario-list">
+          <div class="scenario"><b>I<sub>s</sub></b>: victim shared parameters are known.</div>
+          <div class="scenario"><b>I<sub>p</sub></b>: victim private structure is known.</div>
+          <div class="scenario"><b>I<sub>d</sub></b>: victim-data subset is known.</div>
+          <div class="scenario"><b>AS[000]--AS[111]</b>: eight prior-knowledge settings.</div>
         </div>
       </div>
     </section>
