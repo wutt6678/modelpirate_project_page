@@ -29,13 +29,12 @@
   <header id="top" class="hero">
     <div class="venue">ICML 2026</div>
     <h1>An Empirical Study on the Resilience of Partial Merging to Model Clone Attacks</h1>
-    <p class="authors">Tiantong Wu<sup>1,2</sup>, Yurong Hao<sup>1</sup>, Wei Yang Bryan Lim<sup>1,2</sup></p>
+    <p class="authors">Tiantong Wu<sup>1,2</sup>, Yurong Hao<sup>1</sup>, Wei Yang Bryan Lim<sup>1</sup></p>
     <p class="affiliations"><sup>1</sup>College of Computing and Data Science, Nanyang Technological University, Singapore<br />
       <sup>2</sup>Alibaba--NTU Global e-Sustainability Lab (ANGEL), Nanyang Technological University, Singapore</p>
     <p class="hero-text">We study whether partial model merging really preserves model privacy. Our attack, <strong>ModelPirate</strong>, shows that adversaries can recover significant private-model behaviour even when only limited data, shared parameters, or private-structure knowledge is exposed.</p>
     <div class="button-row">
-      <a class="btn" href="assets/pdf/paper.pdf">Paper PDF</a>
-      <a class="btn secondary" href="https://github.com/wutt6678/ModelPirate">GitHub Code</a>
+      <a class="btn" href="https://openreview.net/forum?id=90a2FQiDDQ">OpenReview</a>
       <a class="btn secondary" href="#bibtex">BibTeX</a>
     </div>
   </header>
@@ -53,7 +52,7 @@
       <div class="grid-2">
         <div>
           <p><strong>Partial model merging</strong> partitions a fine-tuned model into a shared part and a private part. Only the shared layers are sent to a merging entity; the private layers stay local to each client.</p>
-          <p class="callout">Core question: how much model privacy is actually preserved when only a subset of parameters is shared for merging?</p>
+          <p class="callout">Core question: How would model privacy be affected by sharing a subset of model parameters for merging?</p>
           <p>Our empirical results show a privacy--utility tradeoff: sharing more layers improves PMM utility but can also increase the feasibility of model clone attacks.</p>
         </div>
         <div class="figure-card"><img src="assets/img/partial_merge.png" alt="Partial model merging workflow" /><p class="caption">Partial model merging: fine-tune, split, merge the shared part, and reconnect the private part.</p></div>
@@ -117,8 +116,8 @@
       <div class="copy-row"><button id="copy-bibtex" class="copy-btn" onclick="copyBibtex()">Copy</button></div>
       <pre><code id="bibtex">@inproceedings{wu2026modelpirate,
   title     = {An Empirical Study on the Resilience of Partial Merging to Model Clone Attacks},
-  author    = {Wu, Tiantong and Hao, Yurong and Lim, Wei Yang Bryan},
-  booktitle = {Proceedings of the 43rd International Conference on Machine Learning},
+  author    = {Tiantong Wu and Yurong Hao and Wei Yang Bryan Lim},
+  booktitle = {Forty-third International Conference on Machine Learning (ICML)},
   year      = {2026}
 }</code></pre>
     </section>
